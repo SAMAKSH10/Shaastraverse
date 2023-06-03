@@ -11,8 +11,8 @@ response = requests.get('https://goweather.herokuapp.com/weather/' + city)
 # print(wind)
 # description = response.json()['description']
 # print(description)
-s=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
-t=date.today()
+# s=['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+# t=date.today()
 for x in range(0, 3):
     print("Day :",response.json()['forecast'][x]['day'],end=" , ")
     print (s[(t.weekday()+x)%7])
